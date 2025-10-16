@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Career Guidance Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        select,
+        input[type="submit"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Career Guidance Test</h1>
+        <form action="/submit" method="POST">
+            <!-- Primary Interest Selection -->
+            <label for="interest">Choose your primary area of interest:</label>
+            <select name="interest" id="interest" required>
+                <option value="technology">Technology</option>
+                <option value="design">Design</option>
+                <option value="business">Business</option>
+                <option value="science">Science</option>
+                <option value="arts">Arts</option>
+            </select>
+
+            <!-- Additional Questions for Subject Prediction -->
+            <label for="math_interest">How interested are you in Mathematics?</label>
+            <select name="math_interest" id="math_interest" required>
+                <option value="high">High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="science_interest">How interested are you in Science?</label>
+            <select name="science_interest" id="science_interest" required>
+                <option value="high">High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="design_interest">How interested are you in Design?</label>
+            <select name="design_interest" id="design_interest" required>
+                <option value="high">High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="business_interest">How interested are you in Business?</label>
+            <select name="business_interest" id="business_interest" required>
+                <option value="high">High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="arts_interest">How interested are you in Arts?</label>
+            <select name="arts_interest" id="arts_interest" required>
+                <option value="high">High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
